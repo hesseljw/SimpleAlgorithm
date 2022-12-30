@@ -4,5 +4,11 @@
 
 #pragma once
 
-void InsertionSort(std::vector<double>& problem_array, std::vector<double>& sorted_array);
+
+class Sorting {
+
+
+
+};
+
 
