@@ -1,0 +1,19 @@
+# ninja log v5
+19	122	6941167922156088	CMakeFiles/LearnAlgorithm.dir/Sorting.cpp.obj	2c4cadeb453af21a
+28	616	6941167927090573	CMakeFiles/LearnAlgorithm.dir/InsertionSort.cpp.obj	6e8c33eb1f782c7e
+7	664	6941169369728557	CMakeFiles/LearnAlgorithm.dir/main.cpp.obj	1e93834262c45532
+665	884	6941169371446208	LearnAlgorithm.exe	f47c9923d1eac4dc
+8	702	6941171331549142	CMakeFiles/LearnAlgorithm.dir/Sorting.cpp.obj	2c4cadeb453af21a
+9	665	6941171695026227	CMakeFiles/LearnAlgorithm.dir/Sorting.cpp.obj	2c4cadeb453af21a
+3	667	6941171695155885	CMakeFiles/LearnAlgorithm.dir/main.cpp.obj	1e93834262c45532
+668	957	6941171697416340	LearnAlgorithm.exe	ba575c0d1cb5804b
+17	871	6941241457869476	CMakeFiles/LearnAlgorithm.dir/Sorting.cpp.obj	2c4cadeb453af21a
+11	889	6941241458055683	CMakeFiles/LearnAlgorithm.dir/main.cpp.obj	1e93834262c45532
+890	1329	6941241459936903	LearnAlgorithm.exe	ba575c0d1cb5804b
+4	526	6941241950285809	CMakeFiles/LearnAlgorithm.dir/Sorting.cpp.obj	2c4cadeb453af21a
+3	539	6941242025404109	CMakeFiles/LearnAlgorithm.dir/Sorting.cpp.obj	2c4cadeb453af21a
+3	592	6941242231947223	CMakeFiles/LearnAlgorithm.dir/main.cpp.obj	1e93834262c45532
+592	808	6941242233416800	LearnAlgorithm.exe	ba575c0d1cb5804b
+9	561	6941242397059073	CMakeFiles/LearnAlgorithm.dir/Sorting.cpp.obj	2c4cadeb453af21a
+3	575	6941242397222038	CMakeFiles/LearnAlgorithm.dir/main.cpp.obj	1e93834262c45532
+575	773	6941242398747971	LearnAlgorithm.exe	ba575c0d1cb5804b

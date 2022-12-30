@@ -3,4 +3,4 @@ project(LearnAlgorithm)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(LearnAlgorithm main.cpp Sorting.cpp Sorting.h InsertionSort.cpp)
+add_executable(LearnAlgorithm main.cpp Sorting.cpp Sorting.h)
