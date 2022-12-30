@@ -1,3 +1,8 @@
+/*
+ *This is done to do the work from Introduction to Algorithms book by
+ * Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
+ */
+
 #include <iostream>
 #include <vector>
 #include "Sorting.h"
