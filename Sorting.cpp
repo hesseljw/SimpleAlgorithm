@@ -41,18 +41,37 @@ void InsertionSort(std::vector<double>& problem_array, std::vector<double>& sort
 
 }
 
-
+//InsertionSort is worked with O(n)
 void Merge(std::vector<double>& problem_array, std::vector<double>& sorted_array){
     int nL, nR, q, i, j, k;
     int n = problem_array.size();
 
-    q = (n/2) - 1;
+    if (n%2 == 0) {
+        q = (n/2) - 1;
 
-    nL = q + 1; //Length of left array
-    nR = n - q - 1; //Length of right Array
+        nL = q + 1; //Length of left array
+        nR = n - q -1; //Length of right Array
+    }
+
+    else {
+        q = (n/2);
+
+        nL = q + 1; //Length of left array
+        nR = n - q -1; //Length of right Array
+
+        if(problem_array.at(nL-1)<problem_array.at(nL-2))
+        {
+            q = (n/2) - 1;
+
+            nL = q + 1; //Length of left array
+            nR = n - q -1; //Length of right Array
+        }
+    }
+
 
     std::vector<double> L(nL, 0);
     std::vector<double> R(nR, 0);
+
 
     //Left Array to array L
     i=0;
@@ -72,6 +91,7 @@ void Merge(std::vector<double>& problem_array, std::vector<double>& sorted_array
     j = 0;
     k = 0;
 
+    //Comparing and move it to the sorted array if condition is achieved.
     while (i<nL && j <nR){
         if(L[i]<= R[j]){
             sorted_array.at(k) = L[i];
@@ -84,6 +104,7 @@ void Merge(std::vector<double>& problem_array, std::vector<double>& sorted_array
         k++;
     }
 
+    //Next the leftout will be all moved to the sorted array.
     while (i<nL){
         sorted_array.at(k) = L[i];
         i++;
@@ -96,13 +117,6 @@ void Merge(std::vector<double>& problem_array, std::vector<double>& sorted_array
         k++;
     }
 
-
-
-    PrintVector(sorted_array);
-
-
-//    std::cout << L.size() << " is the size of Left" << std::endl;
-//    std::cout << R.size() << " is the size of Right" << std::endl;
 
 
 
