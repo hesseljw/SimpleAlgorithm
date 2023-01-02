@@ -10,26 +10,28 @@
 #include "Sorting.h"
 
 
-void PrintVector(std::vector<double>& printedvect)
-{
-    for (const double& vect : printedvect)
-    {
-        std::cout << vect << std::endl;
-    }
-    std::cout << "There are " << printedvect.size() << " elements." << std::endl;
-
-}
 
 int main() {
 
+    int size_of_vector;
+//    std::vector<double> vector1 = {1, 2, 3, 5 ,1 ,3 , 4, 8};
+//
+//    size_of_vector = vector1.size();
+//    std::vector<double> vector2(size_of_vector, 0);
+//
+//    InsertionSort(vector1, vector2);
+//    PrintVector(vector2);
 
-    std::vector<double> vector1 = {2, 5 ,1 ,3 , 4, 2, 1};
+    std::vector<double> vector3 = {1, 2, 3, 5 ,1 ,3 , 4, 8};
+    size_of_vector = vector3.size();
+    std::vector<double> vector4(size_of_vector, 0);
 
-    int size_of_vector = vector1.size();
-    std::vector<double> vector2(size_of_vector, 0);
+    PrintVector(vector3);
 
-    InsertionSort(vector1, vector2);
-    PrintVector(vector2);
+    Merge(vector3,vector4);
+//    PrintVector(vector4);
+
+
 
     std::cin.get();
     return 0;
