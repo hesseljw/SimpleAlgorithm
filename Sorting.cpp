@@ -41,7 +41,7 @@ void InsertionSort(std::vector<double>& problem_array, std::vector<double>& sort
 
 }
 
-//InsertionSort is worked with O(n)
+//Merge is worked with O(n) and will be used for divide and conquer next.
 void Merge(std::vector<double>& problem_array, std::vector<double>& sorted_array){
     int nL, nR, q, i, j, k;
     int n = problem_array.size();
