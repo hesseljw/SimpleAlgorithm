@@ -46,6 +46,7 @@ void Merge(std::vector<double>& problem_array, std::vector<double>& sorted_array
     int nL, nR, q, i, j, k;
     int n = problem_array.size();
 
+    //Check for odd or even problem
     if (n%2 == 0) {
         q = (n/2) - 1;
 
@@ -59,6 +60,7 @@ void Merge(std::vector<double>& problem_array, std::vector<double>& sorted_array
         nL = q + 1; //Length of left array
         nR = n - q -1; //Length of right Array
 
+        //If the left turns out the have more value than the right
         if(problem_array.at(nL-1)<problem_array.at(nL-2))
         {
             q = (n/2) - 1;
