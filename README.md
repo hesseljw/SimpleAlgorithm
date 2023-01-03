@@ -1,5 +1,5 @@
 # SimpleAlgorithm
-Recreate Simple Algorithm and Write it in Modern c++
+Recreate Simple Algorithm and Write it in Modern C++
 
 
 The algorithms are based on the book below:
