@@ -1,3 +1,0 @@
-C:/Users/Hessel-PC/source/repos/hesseljw/SimpleAlgorithm/out/build/x64-debug/CMakeFiles/LearnAlgorithm.dir
-C:/Users/Hessel-PC/source/repos/hesseljw/SimpleAlgorithm/out/build/x64-debug/CMakeFiles/edit_cache.dir
-C:/Users/Hessel-PC/source/repos/hesseljw/SimpleAlgorithm/out/build/x64-debug/CMakeFiles/rebuild_cache.dir

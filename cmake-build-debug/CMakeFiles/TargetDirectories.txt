@@ -1,3 +1,0 @@
-C:/Users/Hessel-PC/CLionProjects/SimpleAlgorithm/cmake-build-debug/CMakeFiles/LearnAlgorithm.dir
-C:/Users/Hessel-PC/CLionProjects/SimpleAlgorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Hessel-PC/CLionProjects/SimpleAlgorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
