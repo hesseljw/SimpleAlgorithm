@@ -18,9 +18,11 @@ void PrintVector(std::vector<double>& printedvect)
 
 
 //InsertionSort is on O(n^2)
-void InsertionSort(std::vector<double>& problem_array, std::vector<double>& sorted_array)
+void InsertionSort(std::vector<double>& problem_array)
 {
     int n = problem_array.size();
+    std::vector<double> sorted_array(n, 0);
+
     sorted_array.at(0) = problem_array.at(0);
 
     int j;
@@ -39,10 +41,16 @@ void InsertionSort(std::vector<double>& problem_array, std::vector<double>& sort
         sorted_array.at(j + 1) = temp;
     }
 
+    problem_array = sorted_array;
+
 }
 
 //Merge is worked with O(n) and will be used for divide and conquer next.
-void Merge(std::vector<double>& problem_array, std::vector<double>& sorted_array){
+void Merge(std::vector<double>& problem_array){
+
+    int size_of_vector = problem_array.size();
+    std::vector<double> sorted_array(size_of_vector, 0);
+
     int nL, nR, q, i, j, k;
     int n = problem_array.size();
 
@@ -119,11 +127,63 @@ void Merge(std::vector<double>& problem_array, std::vector<double>& sorted_array
         k++;
     }
 
+    problem_array = sorted_array;
 
 }
 
 
 //Merge Sort is Sorting using divide and conquer with O(n log n)
-void MergeSort(std::vector<double>& problem_array, std::vector<double>& sorted_array) {
+void MergeSort(std::vector<double>& problem_array) {
+
+
+    int size = problem_array.size();
+    //check whether only the problem_array is one variable array or not
+    if (size > 1){
+        int q = size/2; //Midpoint of the problem_array
+
+        std::vector<double> L(q, 0);
+        std::vector<double> R(size-q, 0);
+
+
+        int i=0;
+        for(double& iter : L){
+            iter = problem_array[i];
+            i++;
+        }
+
+        for(double& iter : R){
+            iter = problem_array[i];
+            i++;
+        }
+
+        MergeSort(L);
+        MergeSort(R);
+
+        i = 0;
+        for(double& iter : L){
+            problem_array[i] = iter;
+            i++;
+        }
+
+
+        for(double& iter : R){
+            problem_array[i] = iter;
+            i++;
+        }
+
+
+
+        Merge(problem_array);
+
+//        for(const double& iter : R){
+//            std::cout << iter << std::endl;
+//
+//        }
+
+
+
+    }
+
+
 
 }
